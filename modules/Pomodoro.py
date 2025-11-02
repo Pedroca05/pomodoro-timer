@@ -23,7 +23,7 @@ def pomodoro(focus_time, counter):
 
 def Shortrest(counter):
     if focus_time == None:
-        focus_time = 5 * 60
+        focus_time = 25 * 60 # this is the base of pomodoro, but you can change for your own needs
 
     while focus_time >= 0:
 
