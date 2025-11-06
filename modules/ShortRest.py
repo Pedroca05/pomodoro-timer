@@ -1,10 +1,8 @@
 import time
-
-def pomodoro(focus_time):
-    
+def Shortrest(focus_time):
     if focus_time == None or focus_time == 0:
-        focus_time =  0.5* 60
-        focus_time
+        focus_time = 5 * 60 # this is the base of pomodoro, but you can change for your own needs
+
     while focus_time >= 0:
 
         print('\033c', end="")
@@ -18,6 +16,3 @@ def pomodoro(focus_time):
         time.sleep(1)
 
         focus_time -= 1
-    
-  
-   

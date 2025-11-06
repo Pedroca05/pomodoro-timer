@@ -1,10 +1,10 @@
 import time
 
-def pomodoro(focus_time):
-    
+def Longrest(focus_time,):
+
     if focus_time == None or focus_time == 0:
-        focus_time =  0.5* 60
-        focus_time
+        focus_time = 2 * 60
+
     while focus_time >= 0:
 
         print('\033c', end="")
@@ -19,5 +19,5 @@ def pomodoro(focus_time):
 
         focus_time -= 1
     
-  
-   
+    print('\033c', end="")
+    print("Finish")

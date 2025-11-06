@@ -1,5 +1,8 @@
 import time
-import modules.Pomodoro as pm
+from modules import Pomodoro as pd
+from modules import LongRest as LR
+from modules import ShortRest as SR
+
 
 def Mainpage():
     # this section is just for open a .txt file who is the menu page
@@ -17,7 +20,16 @@ def Mainpage():
 
     if int(choice) == 1: 
         print("\033c",end="")
-        pm.pomodoro(focus_time, counter) 
+        
+        pd.pomodoro(focus_time)
+        SR.Shortrest(focus_time)
+        pd.pomodoro(focus_time) 
+        SR.Shortrest(focus_time)
+        pd.pomodoro(focus_time) 
+        SR.Shortrest(focus_time)
+        pd.pomodoro(focus_time) 
+        LR.Longrest(focus_time)
+
 
 
     elif int(choice) == 2 or str(choice) == 'exit':
